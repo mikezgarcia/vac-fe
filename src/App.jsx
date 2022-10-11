@@ -6,11 +6,11 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 
-import MembersProfile from "./pages/dashboard/members/MembersProfile";
-import SidePanel from "./pages/dashboard/members/MemberSidePanel";
-import MainStats from "./pages/dashboard/MainStats";
+import MemberProfile from "./pages/dashboard/members/MemberProfile";
+import MemberSidePanel from "./pages/dashboard/members/MemberSidePanel";
+import MemberStat from "./pages/dashboard/members/MemberStat";
 import DashboardNav from "./pages/dashboard/DashboardNav";
-import MainDashboard from "./pages/dashboard/MainDashboard";
+import MemberDashboard from "./pages/dashboard/members/MemberDashboard";
 
 import VACDashboard from "./pages/dashboard/admin/VACDashboard";
 import AdminDashboard from "./pages/dashboard/admin/AdminDashboard";
@@ -32,13 +32,13 @@ function App() {
         <Route path="/register" element={<Register />} />
 
         {/* Members Pages */}
-        <Route path="/membersprofile" element={<MembersProfile />} />
-        <Route path="/sidepanel" element={<SidePanel />} />
-        <Route path="/mainstat" element={<MainStats />} />
+        <Route path="/memberprofile" element={<MemberProfile />} />
+        <Route path="/sidepanel" element={<MemberSidePanel />} />
+        <Route path="/memberstat" element={<MemberStat />} />
         <Route path="/dashboardnav" element={<DashboardNav />} />
-        <Route path="/maindashboard" element={<MainDashboard />} />
+        <Route path="/memberdashboard" element={<MemberDashboard />} />
 
-        {/* Members Action Pages */}
+        {/*Admin Members Action Pages */}
         <Route path="/edit" element={<Edit />} />
         <Route path="/update" element={<Update />} />
         <Route path="/delete" element={<Delete />} />

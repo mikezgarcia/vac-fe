@@ -15,8 +15,8 @@ export default function SidePanel() {
       {" "}
       {!open ? (
         <Icon
-          icon="cil:hamburger-menu"
-          className="text-white text-4xl"
+          icon="bi:arrow-right-square-fill"
+          className="text-white text-4xl m-3"
           onClick={() => setOpen(!open)}
         />
       ) : (
@@ -24,7 +24,7 @@ export default function SidePanel() {
           {/* Arrows */}
           <button className="absolute self-end ml-2 mr-4">
             <Icon
-              className=" text-3xl text-white hover:text-secondary"
+              className="text-4xl text-white hover:text-secondary"
               icon="bi:arrow-left-square-fill"
               onClick={() => setOpen(!open)}
             />
@@ -43,13 +43,13 @@ export default function SidePanel() {
 
           <div className="flex flex-col items-center w-[300px]">
             {/* Home */}
-            <Link to="/">
+            <Link to="/memberdashboard">
               <button className="sidebar-btn ">
                 <Icon
                   className="sidebar-icon text-[110px]"
                   icon="dashicons:admin-home"
                 />
-                <h2 className="sidebar-txt">Home</h2>
+                <p className="sidebar-txt">Home</p>
               </button>
             </Link>
             {/* Wallet */}

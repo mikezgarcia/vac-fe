@@ -1,8 +1,9 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import hrImg from "../images/hr-mv.png";
-import logoImg from "../images/logo-white-orange.png";
+
 import NotYetMemberBtn from "../components/utilities/NotYetMemberBtn";
+import LogoHomeBtn from "../components/utilities/LogoHomeBtn";
 import LoginAlt from "../components/utilities/LoginAlt";
 
 // Icons
@@ -29,15 +30,7 @@ export default function Login() {
         <div className="bg-primary p-5 flex-col justify-around rounded-r-[25px] rounded-l-[25px] md:rounded-l-none">
           <form className="container">
             {/* Logo */}
-            <div className="flex flex-col items-center mb-4">
-              <img className="h-16 mt-2" src={logoImg} alt="" />
-              <h2 className="font-sans font-bold text-white text-center">
-                Virtual Assest Credit Cooperative
-              </h2>
-              <h4 className="font-sans font-extralight text-white text-center">
-                Community Building, Enriching through Technology
-              </h4>
-            </div>
+            <LogoHomeBtn />
             {/* End of Logo */}
             <h1 className="font-sans font-medium text-white text-4xl mt-5">
               Welcome Back!

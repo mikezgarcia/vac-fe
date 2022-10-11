@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import hrImg from "../images/hr-mv.png";
 import logoImg from "../images/logo-white-orange.png";
 
@@ -14,7 +15,10 @@ export default function Register() {
         <form className="w-full mt-10 sm:mt-7" action="/">
           {/* Logo */}
           <div className="flex flex-col items-center justify-center m-4 md:flex-row">
-            <img className="h-16  md:h-24" src={logoImg} alt="" />
+            <Link to="/">
+              <img className="h-16  md:h-24" src={logoImg} alt="" />
+            </Link>
+
             <div className="flex flex-col items-center md:space-x-2">
               <h2 className="font-sans font-bold text-white text-center text-lg md:text-xl">
                 Virtual Assest Credit Cooperative
