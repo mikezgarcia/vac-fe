@@ -2,6 +2,8 @@ import React from "react";
 import hrImg from "../images/hr-mv.png";
 import logoImg from "../images/logo-white-orange.png";
 
+import AlreadyMemberBtn from "../components/utilities/AlreadyMemberBtn";
+
 export default function Register() {
   return (
     // main container
@@ -117,7 +119,8 @@ export default function Register() {
               />
             </div>
             {/* Inputs Ends Here */}
-            <div className="w-full flex flex-row justify-end">
+            <div className="w-full flex flex-row justify-end space-x-5">
+              <AlreadyMemberBtn />
               <button class="group overflow-hidden mt-4 px-6 h-12 rounded-lg flex items-center bg-secondary hover:bg-orange-600">
                 <span class="font-sans font-medium text-xl text-white pl-1">
                   Create Account

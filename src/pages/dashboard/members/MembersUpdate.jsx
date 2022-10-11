@@ -1,9 +1,9 @@
 import React from "react";
-import hrImg from "../../images/hr-mv.png";
-import profileImg from "../../images/profileImg.png";
+import hrImg from "../../../images/hr-mv.png";
+import profileImg from "../../../images/profileImg.png";
 import { Icon } from "@iconify/react";
 
-export default function Members() {
+export default function MembersUpdate() {
   return (
     // Members Profile
 
@@ -11,10 +11,10 @@ export default function Members() {
     <div className="w-full h-full flex flex-col items-center">
       {/* Contents Container */}
       <div className="w-full h-[55px] mt-4">
-        <h2 className="flex flex-col items-center font-sans font-bold text-2xl text-primary text-center md:items-start">
+        <h2 className="flex flex-col items-center font-sans font-bold text-2xl text-primary text-center md:items-start mx-4">
           MEMBERS PROFILE
         </h2>
-        <img className="w-full h-1" src={hrImg} alt="hr" />
+        <img className="w-full h-1 mx-4" src={hrImg} alt="hr" />
       </div>
       <div className="w-full h-full flex flex-col  items-center justify-center md:flex-row md:items-start md:pl-7 md:pr-7 ">
         {/* Profile Details Section */}
@@ -158,7 +158,7 @@ export default function Members() {
               <button class="group overflow-hidden mt-4 px-6 h-12 rounded-lg flex items-center bg-secondary hover:bg-orange-600 md:mt-0">
                 <Icon className="text-2xl text-white" icon="fa-solid:edit" />
                 <span class="font-sans font-medium text-xl text-white pl-1">
-                  Edit
+                  Update
                 </span>
               </button>
             </div>

@@ -1,22 +1,22 @@
 import React from "react";
-import DashboardNav from "./DashboardNav";
-import MainStats from "./MainStats";
-import Members from "./members/MembersProfile";
-import SidePanel from "./members/MemberSidePanel";
+import AdminNavbar from "./AdminNavbar";
+import AdminSidebar from "./AdminSidebar";
+import AdminStats from "./AdminStats";
+import Report from "./Report";
 
-export default function MainDashboard() {
+export default function VACDashboard() {
   return (
     // Main Container FullPage
     <div>
       <div className="flex w-screen h-screen">
         <div className="bg-primary  h-full">
-          <SidePanel />
+          <AdminSidebar />
         </div>
         <div className="w-screen h-full overflow-scroll">
-          <DashboardNav />
+          <AdminNavbar />
           <div>
-            <MainStats />
-            <Members />
+            <AdminStats />
+            <Report />
           </div>
         </div>
       </div>

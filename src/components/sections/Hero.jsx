@@ -1,6 +1,7 @@
 import React from "react";
 import heroImg from "../../images/heroImg.jpg";
 import { Icon } from "@iconify/react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -24,17 +25,24 @@ export default function Hero() {
           </h2>
           {/* CTA Buttons */}
           <div className="flex flex-row items-center justify-center mt-2 space-x-3 pr-4 pl-4">
-            <button class="group overflow-hidden mt-4 px-6 h-12 rounded-2xl flex items-center bg-secondary hover:bg-orange-600">
-              <span class="font-sans font-medium text-xl text-white pl-1">
-                JOIN NOW
-              </span>
-            </button>
-            <button class="group overflow-hidden mt-4 px-6 h-12 rounded-2xl flex items-center bg-white border-2 border-secondary hover:bg-primary hover:bg-opacity-90">
-              <Icon className="text-2xl text-secondary " icon="entypo:login" />
-              <span class="font-sans font-medium text-xl text-secondary pl-1">
-                LOGIN
-              </span>
-            </button>
+            <Link to="/register">
+              <button class="group overflow-hidden mt-4 px-6 h-12 rounded-2xl flex items-center bg-secondary hover:bg-orange-600">
+                <span class="font-sans font-medium text-xl text-white pl-1">
+                  JOIN NOW
+                </span>
+              </button>
+            </Link>
+            <Link to="/login">
+              <button class="group overflow-hidden mt-4 px-6 h-12 rounded-2xl flex items-center bg-white border-2 border-secondary hover:bg-primary hover:bg-opacity-90">
+                <Icon
+                  className="text-2xl text-secondary "
+                  icon="entypo:login"
+                />
+                <span class="font-sans font-medium text-xl text-secondary pl-1">
+                  LOGIN
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
       </div>
