@@ -158,7 +158,7 @@ export default function Members() {
               <button class="group overflow-hidden mt-4 px-6 h-12 rounded-lg flex items-center bg-secondary hover:bg-orange-600 md:mt-0">
                 <Icon className="text-2xl text-white" icon="fa-solid:edit" />
                 <span class="font-sans font-medium text-xl text-white pl-1">
-                  Login
+                  Edit
                 </span>
               </button>
             </div>

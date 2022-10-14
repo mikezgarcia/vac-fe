@@ -1,10 +1,10 @@
 import React from "react";
-import DashboardNav from "../DashboardNav";
-import MemberStats from "../members/MemberStat";
-import MemberProfile from "../members/MemberProfile";
-import MemberSidePanel from "../members/MemberSidePanel";
 
-export default function MainDashboard() {
+import DashboardNav from "../DashboardNav";
+import MemberSidePanel from "../members/MemberSidePanel";
+import MemberStats from "../members/MemberStat";
+
+export default function MemberWallet() {
   return (
     // Main Container FullPage
     <div>
@@ -18,7 +18,6 @@ export default function MainDashboard() {
           {/* This is for Home Button */}
           <div>
             <MemberStats />
-            <MemberProfile />
           </div>
           {/* end of Home */}
 

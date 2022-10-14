@@ -1,7 +1,7 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import logoImg from "../../../images/logo-white-orange.png";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 // import { Icon } from "@iconify/react";
@@ -9,6 +9,16 @@ import { useState } from "react";
 
 export default function SidePanel() {
   const [open, setOpen] = useState(true);
+
+  const navigate = useNavigate();
+
+  const navToDash = () => {
+    navigate("/memberdashboard");
+  };
+  const navToWallet = () => {
+    navigate("/memberwallet");
+  };
+
   return (
     // SidePanel Menu / Mobile Menu
     <>
@@ -16,7 +26,7 @@ export default function SidePanel() {
       {!open ? (
         <Icon
           icon="bi:arrow-right-square-fill"
-          className="text-white text-4xl m-3"
+          className="text-white hover:text-secondary text-4xl m-3"
           onClick={() => setOpen(!open)}
         />
       ) : (
@@ -43,19 +53,19 @@ export default function SidePanel() {
 
           <div className="flex flex-col items-center w-[300px]">
             {/* Home */}
-            <Link to="/memberdashboard">
-              <button className="sidebar-btn ">
-                <Icon
-                  className="sidebar-icon text-[110px]"
-                  icon="dashicons:admin-home"
-                />
-                <p className="sidebar-txt">Home</p>
-              </button>
-            </Link>
-            {/* Wallet */}
-            <button className="sidebar-btn">
+
+            <button onClick={navToDash} className="sidebar-btn ">
               <Icon
                 className="sidebar-icon text-[55px]"
+                icon="dashicons:admin-home"
+              />
+              <p className="sidebar-txt">Home</p>
+            </button>
+
+            {/* Wallet */}
+            <button onClick={navToWallet} className="sidebar-btn">
+              <Icon
+                className="sidebar-icon text-[50px]"
                 icon="clarity:wallet-solid"
               />
               <h2 className="sidebar-txt">Wallet</h2>
@@ -63,7 +73,7 @@ export default function SidePanel() {
             {/* Activities */}
             <button className="sidebar-btn">
               <Icon
-                className="sidebar-icon text-[57px]"
+                className="sidebar-icon text-[50px]"
                 icon="mdi:calendar-clock"
               />
               <h2 className="sidebar-txt">Activities</h2>

@@ -5,12 +5,20 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import DashboardNav from "./pages/dashboard/DashboardNav";
 
-import MemberProfile from "./pages/dashboard/members/MemberProfile";
+// members dashboard panels
 import MemberSidePanel from "./pages/dashboard/members/MemberSidePanel";
 import MemberStat from "./pages/dashboard/members/MemberStat";
-import DashboardNav from "./pages/dashboard/DashboardNav";
 import MemberDashboard from "./pages/dashboard/members/MemberDashboard";
+// members dashboard contents
+import MemberProfile from "./pages/dashboard/members/MemberProfile";
+import MemberTransactions from "./pages/dashboard/members/MemberTransactions";
+import MemberWallet from "./pages/dashboard/members/MemberWallet";
+
+import CashIn from "./pages/dashboard/members/wallet/CashIn";
+import CashOut from "./pages/dashboard/members/wallet/CashOut";
+import Invest from "./pages/dashboard/members/wallet/Invest";
 
 import VACDashboard from "./pages/dashboard/admin/VACDashboard";
 import AdminDashboard from "./pages/dashboard/admin/AdminDashboard";
@@ -31,12 +39,20 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
 
-        {/* Members Pages */}
-        <Route path="/memberprofile" element={<MemberProfile />} />
-        <Route path="/sidepanel" element={<MemberSidePanel />} />
-        <Route path="/memberstat" element={<MemberStat />} />
+        {/* Members Dashboard Panels */}
         <Route path="/dashboardnav" element={<DashboardNav />} />
+        <Route path="/sidepanel" element={<MemberSidePanel />} />
         <Route path="/memberdashboard" element={<MemberDashboard />} />
+        <Route path="/memberwallet" element={<MemberWallet />} />
+
+        {/* Member Dashboard Content */}
+        <Route path="/memberstat" element={<MemberStat />} />
+        <Route path="/memberprofile" element={<MemberProfile />} />
+        <Route path="/membertransactions" element={<MemberTransactions />} />
+        {/* Members Wallet Operations */}
+        <Route path="/cashin" element={<CashIn />} />
+        <Route path="/cashout" element={<CashOut />} />
+        <Route path="/invest" element={<Invest />} />
 
         {/*Admin Members Action Pages */}
         <Route path="/edit" element={<Edit />} />
