@@ -50,9 +50,9 @@ function App() {
         <Route path="/memberprofile" element={<MemberProfile />} />
         <Route path="/membertransactions" element={<MemberTransactions />} />
         {/* Members Wallet Operations */}
-        <Route path="/cashin" element={<CashIn />} />
-        <Route path="/cashout" element={<CashOut />} />
-        <Route path="/invest" element={<Invest />} />
+        <Route path="/memberwallet/cashin" element={<CashIn />} />
+        <Route path="/memberwallet/cashout" element={<CashOut />} />
+        <Route path="/memberwallet/invest" element={<Invest />} />
 
         {/*Admin Members Action Pages */}
         <Route path="/edit" element={<Edit />} />

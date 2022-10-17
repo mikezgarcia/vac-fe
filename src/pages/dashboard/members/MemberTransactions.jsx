@@ -2,13 +2,14 @@ import React from "react";
 import { Icon } from "@iconify/react";
 
 export default function MemberTransactions() {
+  // This is a member transactions table, can be filtered into Cash-In, Cash-out, Investments and Wallet-main view
   return (
     <div className="flex flex-col m-5">
       <div className="overflow-x-auto">
         <div className="relative flex flex-wrap items-center justify-between px-2 py-3">
           <div className="relative">
             <h3 className="font-bold text-blue-900 text-2xl">
-              Wallet/Cash-in/Cash-out/Invest Transactions
+              Wallet Transactions
             </h3>
           </div>
 

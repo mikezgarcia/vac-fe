@@ -35,7 +35,7 @@
     @apply font-sans font-bold text-3xl text-primary;
   }
   .stat-btn {
-    @apply bg-secondary h-10 w-full rounded-md font-sans font-semibold text-2xl text-white;
+    @apply bg-secondary h-10 w-full rounded-md font-sans font-semibold text-2xl text-white hover:bg-orange-400;
   }
   /* End of Dashboard Stats*/
 
