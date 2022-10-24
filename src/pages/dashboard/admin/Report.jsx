@@ -3,6 +3,7 @@ import React from "react";
 export default function Report() {
   const Tabs = ({ color }) => {
     const [openTab, setOpenTab] = React.useState(1);
+
     return (
       <>
         <div className="w-full h-1 bg-primary " />
@@ -29,7 +30,7 @@ export default function Report() {
                     setOpenTab(1);
                   }}
                   data-toggle="tab"
-                  href="#link1"
+                  href="#reportIncome"
                   role="tablist"
                 >
                   Report Income
@@ -50,7 +51,7 @@ export default function Report() {
                     setOpenTab(2);
                   }}
                   data-toggle="tab"
-                  href="#link2"
+                  href="#reportExpense"
                   role="tablist"
                 >
                   Report Expense
@@ -71,7 +72,7 @@ export default function Report() {
                     setOpenTab(3);
                   }}
                   data-toggle="tab"
-                  href="#link3"
+                  href="#reportInvestment"
                   role="tablist"
                 >
                   Report Investment
@@ -85,7 +86,7 @@ export default function Report() {
                 <div className="tab-content tab-space">
                   <div
                     className={openTab === 1 ? "block" : "hidden"}
-                    id="link1"
+                    id="reportIncome"
                   >
                     <form action="">
                       <h2 className="flex justify-end pr-5 pl-5 w-full h-10 font-sans font-semibold text-blue-900 text-lg md:pl-5">
@@ -166,7 +167,7 @@ export default function Report() {
                   </div>
                   <div
                     className={openTab === 2 ? "block" : "hidden"}
-                    id="link2"
+                    id="reportExpense"
                   >
                     <form action="">
                       <h2 className="flex justify-end pr-5 pl-5 w-full h-10 font-sans font-semibold text-blue-900 text-lg md:pl-5">
@@ -247,7 +248,7 @@ export default function Report() {
                   </div>
                   <div
                     className={openTab === 3 ? "block" : "hidden"}
-                    id="link3"
+                    id="reportInvestment"
                   >
                     <form action="">
                       <h2 className="flex justify-end pr-5 pl-5 w-full h-10 font-sans font-semibold text-blue-900 text-lg md:pl-5">

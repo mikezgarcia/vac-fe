@@ -14,8 +14,8 @@ export default function AdminSidebar() {
     <>
       {!open ? (
         <Icon
-          icon="cil:hamburger-menu"
-          className="text-white text-4xl"
+          icon="bi:arrow-right-square-fill"
+          className="text-white hover:text-secondary text-4xl m-3"
           onClick={() => setOpen(!open)}
         />
       ) : (
